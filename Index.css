@@ -20,6 +20,7 @@ body {
     font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
     color: white;    /* color del text */
     background-color: #950E17;    /* color de fons */ #1a136d
+    }
 .seccio {
     flex: 1;    /* les seccions ocupen tot l'espai disponible */
     display: none;    /* les seccions s'inicien ocultes, excepte la primera */
@@ -29,9 +30,11 @@ body {
     justify-content: center;    /* contingut centrat en la direcció de disposició */
     align-items: center;    /* contingut centrat en la direcció transversal */
     font-size: 4vmax;
+    }
 #menu {
     height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
-}     display: flex;    /* el menú és un contenidor de tipus flex */
+ display: flex;    /* el menú és un contenidor de tipus flex */
+    }
 height: 8vmax;
 }
 #menu i{
