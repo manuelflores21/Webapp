@@ -19,7 +19,7 @@ body {
     align-items: center;    /* centra els elements en la direcció perpendicular a la de disposició */
     font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
     color: white;    /* color del text */
-    background-color: #950E17;    /* color de fons */ #1a136d
+    background-color: #394793;    /* color de fons */ #1a136d
     }
 .seccio {
     flex: 1;    /* les seccions ocupen tot l'espai disponible */
@@ -43,7 +43,7 @@ display: flex;    /* contenidor flex on centrar-hi la icona */
 justify-content: center;
 align-items: center;
 color: white;
-background-color: #950E17;
+background-color: #5cb09a;
 font-size: 5vmax;
 cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
 }
