@@ -25,28 +25,6 @@ body {
     flex: 1;    /* les seccions ocupen tot l'espai disponible */
     display: none;    /* les seccions s'inicien ocultes, excepte la primera */
 }
-#seccio_1 {
-    display: flex;    /* única secció que es mostra a l'inici */
-    justify-content: center;    /* contingut centrat en la direcció de disposició */
-    align-items: center;    /* contingut centrat en la direcció transversal */
-    font-size: 4vmax;
-    }
-#menu {
-    height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
- display: flex;    /* el menú és un contenidor de tipus flex */
-    }
-height: 8vmax;
-}
-#menu i{
-flex: 1;    /* cada botó pretén ocupar tot l'espai disponible */
-display: flex;    /* contenidor flex on centrar-hi la icona */
-justify-content: center;
-align-items: center;
-color: white;
-background-color: #5cb09a;
-font-size: 5vmax;
-cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
-}
 #seccio_0 {
     display: flex;
     flex-direction: column;
@@ -76,4 +54,26 @@ cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
     font-size: 3vmax;
     padding: 2vmin;
     margin: 1vmin;
+}
+#seccio_1 {
+    display: flex;    /* única secció que es mostra a l'inici */
+    justify-content: center;    /* contingut centrat en la direcció de disposició */
+    align-items: center;    /* contingut centrat en la direcció transversal */
+    font-size: 4vmax;
+    }
+#menu {
+    height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
+ display: flex;    /* el menú és un contenidor de tipus flex */
+    }
+height: 8vmax;
+}
+#menu i{
+flex: 1;    /* cada botó pretén ocupar tot l'espai disponible */
+display: flex;    /* contenidor flex on centrar-hi la icona */
+justify-content: center;
+align-items: center;
+color: white;
+background-color: #5cb09a;
+font-size: 5vmax;
+cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
 }
