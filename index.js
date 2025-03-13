@@ -18,7 +18,7 @@ function cambia_seccion ( num_boto )  {
 }
 let validado =  false ;     //variable que permite saber si hay algún usuario validado 
 el nombre , contraseña ; 
-let scriptURL =  "https://script.google.com/.../exec"     // se debe sustituir la cadena de texto por la URL del script
+let scriptURL =  "https://script.google.com/macros/s/AKfycbz6-f_B-QvLYFZCzovO61BlwW-B0c6ZsZ3YL6caSsOGmyJhuM63K7zLcldnWBEIM5sN/exec"     // se debe sustituir la cadena de texto por la URL del script
  
 function inicio_sessio ( )  { 
     nombre = documento. getElementById ( "nombre_usuario" ) . value ;     // la propiedad "value" de un cuadro de texto corresponde al texto escrito por el usuario 
