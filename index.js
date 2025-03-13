@@ -35,5 +35,44 @@ function inicio_sessio ( )  {
             else  {     // lista con (al menos) un registro 
                 window. alert ( "se ha iniciado correctamente la sesión." ; ' ; ; " 
                 inicia_sessio " } } ) ; }    
+                    function inicia_sessio ( )  { 
+    validado =  true ;     // usuario validado 
+    documento. getElementById ( "seccion_0" ) . style . display  =  "none" ;     // se oculta la sección de validación de usuarios 
+    cambia_seccion ( 1 ) ;     // se muestra la sección 1 
+}
+function nuevo_usuario ( )  { 
+    nombre = documento. getElementById ( "nombre_usuario" ) . value ; 
+    contraseña = documento. getElementById ( "contraseña" ) . value ; 
+    let consulta_1 = scriptURL +  "?query=select&where=usuario&is="  + nombre ;     // primera consulta para saber si ya existe algún usuario con el nombre escrito por el usuario que se desea registrar 
+    fetch ( consulta_1 ) 
+        . then ( ( respuesta )  =>  { 
+            return respuesta. json ( ) ; 
+        } ) 
+        . then ( ( respuesta )  =>  { 
+            if ( respuesta. length  ==  0 )  {     // No hay ningún otro usuario con el mismo nombre let consulta_2 = 
+                scriptURL + " ?  query=insert&values="  + nombre + "  $$"  + contraseña ;     // segunda consulta para registrar el usuario nuevo fetch 
+                ( consulta_2 ) { . 
+                    en la base de datos window . 
+                            alert ( " Se ha completado el registro de usuario." ) inicia_sessio 
+                            ( ) ; } else { // no se ha podido añadir un registro en 
+                la base de datos 
+                            alert ( " Se ha producido un error en el registro de usuario." ) } ) } lose { a el usuario ; } } ; }  
+                              
+            function cierre_sessio ( )  { 
+    if  ( validado )  { 
+        if  ( confirmo ( "¿Quieres cerrar la sesión?" ) )  {     // Se ha respondido "Sí" 
+            storage. setItem ( "usuario" ,  "" ) ; 
+            alquiler. reload ( ) ;     // recarga de la página, se reinicializan todas las variables 
+        } 
+    } 
+}            
+                             
+                        
+                    
+             
+                 
+            
+        
+
             
             
